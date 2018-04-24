@@ -1,0 +1,13 @@
+table.außen
+{
+    background-color: cornsilk;
+    margin-top: 15px;
+    border: solid;
+    border-spacing: 20px;
+}
+
+table.innen
+{
+    border: solid;
+    background-color: #e7e1c8;
+}

@@ -4,19 +4,26 @@ extends ./templates/layout
 
 block content
   main
-
+    <table align="center" class="außen">
+    <tr>
+    <td>
+      <table align="center" class="innen">
+      <tr>
+      <td>
     h1(align="center") Terminanmeldung
-
-    <select id="Day" size="6">
+      </td>
+      </tr>
+      </table>
+    <p align="center">
+    <select class="Day" size="6">
     <option value="Mo Di">Mo.</option>
     <option value="Mo Di">Di.</option>
     <option value="Mi">Mi.</option>
     <option value="Do">Do.</option>
     <option value="Fr">Fr.</option>
     <option value="Sa">Sa.</option>
-    </select>
-
-    <select id="Time" size="11">
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select class="Time" size="11">
     <option value="9Uhr">9.00 Uhr</options>
     <option value="10Uhr">10.00 Uhr</options>
     <option value="11Uhr">11.00 Uhr</options>
@@ -29,9 +36,11 @@ block content
     <option value="19Uhr">19.00 Uhr</options>
     <option value="22Uhr">22.00 Uhr</options>
     </select>
+    </p>
     <br>
+    <p align="center">Ihr dürft meine Daten weiterverkaufen? <input type="checkbox" class="privacy" value="yes"> Ja</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="privacy" value="no"> Nein</input></p>
     <br>
-    <p>Ihr dürft meine Daten weiterverkaufen?</p>
-    
-
-    
+    <p align="center"><button type="submit" class="button">Absenden</button></p>
+    </td>    
+    </tr>
+    </table>
