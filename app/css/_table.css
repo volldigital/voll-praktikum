@@ -6,8 +6,24 @@ table.außen
     border-spacing: 20px;
 }
 
-table.innen
+table.headline
 {
     border: solid;
+    background-color: #e7e1c8;
+}
+
+button
+{
+    background-color: #e7e1c8;
+    border: solid;
+}
+
+table.frage
+{
+    border: solid;
+}
+
+select
+{
     background-color: #e7e1c8;
 }
