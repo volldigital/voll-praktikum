@@ -4,129 +4,125 @@ extends ./templates/layout
 
 block content
   main
-    <table align="center" class="außen">
-      <tr>
-        <td>
-          <table align="center" class="headline">
-            <tr>
-              <td>
-                <h1 align="center"> Terminanmeldung</h1>
-              </td>
-            </tr>
-          </table>
-          <br>
-          <p align="center"><b>Bitte wählen sie einen Termin aus.</b></p>
-          <table align="center">
-            <tr>
-              <td>
-                <h3 align="center">Montag</h3>
-              </td>
-              <td>
-                <h3 align="center">Dienstag</h3>
-              </td>
-              <td>
-                <h3 align="center">Mittwoch</h3>
-              </td>
-              <td>
-                <h3 align="center">Donnerstag</h3>
-              </td>
-              <td>
-                <h3 align="center">Freitag</h3>
-              </td>
-              <td>
-                <h3 align="center">Samstag</h3>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <button type="button" class="termin" value="Monntag, 10.00 Uhr">10.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Dienstag, 10.00 Uhr">10.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Mittwoch, 12.00 Uhr">12.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Donnerstag, 9.00 Uhr">09.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Freitag, 10.00 Uhr">10.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Samstag, 11.00 Uhr">11.00 Uhr</button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <button type="button" class="termin" value="Montag, 13.00 Uhr">13.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Dienstag, 13.00 Uhr">13.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Mittwoch, 16.00 Uhr">16.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Donnerstag, 14.00 Uhr">14.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Freitag, 12.00 Uhr">12.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Samstag, 13.00 Uhr">13.00 Uhr</button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <button type="button" class="termin" value"Montag, 16.00 Uhr">16.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Diesntag, 16.00 Uhr">16.00 Uhr</button>
-              </td>
-              <td>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Donnerstag, 19.00 Uhr">19.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Freitag, 17.00 Uhr">17.00 Uhr</button>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Samstag, 18.00 Uhr">18.00 Uhr</button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-              </td>
-              <td>
-              </td>
-              <td>
-              </td>
-              <td>
-              </td>
-              <td>
-              </td>
-              <td>
-                <button type="button" class="termin" value="Samstag, 22.00 Uhr">22.00 Uhr</button>
-              </td>
-            </tr>
-          </table>
-          <table align="center" class="frage">
-            <tr>
-              <td>
-                <p align="center">Ihr dürft meine Daten weiterverkaufen?<p>
-                <p align="center">
-                  <button type="button" class="privacy" value="Ja">Ja</button>
-                  <button type="button" class="privacy" value="Nein">Nein</button>
-                </p>
-              </td>
-            </tr>
-          </table>
-          <br>
-          <p align="center">
-            <button type="submit" id="absenden">Absenden</button>
-          </p>         
-        </td>    
-      </tr>
-    </table>
+    <div class="außen">
+
+      <div class="headline">
+        <h1 align="center"> Terminanmeldung</h1>
+      </div>
+
+      <br>
+      <p align="center" class"bitte"><b>Bitte wählen sie einen Termin aus.</b></p>
+
+      <!-- Buttons mit Uhrzeiten -->
+      <table align="center" class="table">
+        <tr>
+          <td>
+            <h3 align="center">Montag</h3>
+          </td>
+          <td>
+            <h3 align="center">Dienstag</h3>
+          </td>
+          <td>
+            <h3 align="center">Mittwoch</h3>
+          </td>
+          <td>
+            <h3 align="center">Donnerstag</h3>
+          </td>
+          <td>
+            <h3 align="center">Freitag</h3>
+          </td>
+          <td>
+            <h3 align="center">Samstag</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="termin" value="Montag, 10.00 Uhr">10.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Dienstag, 10.00 Uhr">10.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Mittwoch, 12.00 Uhr">12.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Donnerstag, 9.00 Uhr">09.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Freitag, 10.00 Uhr">10.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Samstag, 11.00 Uhr">11.00 Uhr</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="termin" value="Montag, 13.00 Uhr">13.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Dienstag, 13.00 Uhr">13.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Mittwoch, 16.00 Uhr">16.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Donnerstag, 14.00 Uhr">14.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Freitag, 12.00 Uhr">12.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Samstag, 13.00 Uhr">13.00 Uhr</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="termin" value"Montag, 16.00 Uhr">16.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Diesntag, 16.00 Uhr">16.00 Uhr</button>
+          </td>
+          <td>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Donnerstag, 19.00 Uhr">19.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Freitag, 17.00 Uhr">17.00 Uhr</button>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Samstag, 18.00 Uhr">18.00 Uhr</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+            <button type="button" class="termin" value="Samstag, 22.00 Uhr">22.00 Uhr</button>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Datenschutzfrage -->
+      <div class="frage">
+        <p align="center">Dürfen wir Ihre Daten weiterverkaufen?<p>
+        <p align="center">
+          <button type="button" id="b19" class="privacy" value="Ja">Ja</button>
+          <button type="button" id="b20" class="privacy" value="Nein">Nein</button>
+        </p>
+      </div>
+
+      <br>
+      <p align="center">
+        <button type="submit" id="absenden" class="absenden">Anmelden</button>
+      </p>  
+
+    </div>
